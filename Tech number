@@ -1,0 +1,18 @@
+/*to check if the entered number is a tech number */
+import java.util.Scanner;
+public class tech_number
+{
+    public static void main(String args[])
+    {   
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n= sc.nextInt();
+        int a = n / 100;
+        int b = n % 100;
+        int sum = a + b;
+        if(n == sum * sum)
+        System.out.println("The number is a tech number");
+        else
+        System.out.println("The number is not a tech number");       
+    }
+}

@@ -1,0 +1,22 @@
+/*To check if the word is a palindrome.java*/
+import java.util.*;
+public class Palindrome
+{
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner (System.in);
+       System.out.println("Enter a word");
+       String word= sc.nextLine();
+       String reverseString="";
+       int length=word.length();
+       for(int i=length-1; i>=0 ;i--)
+       {
+           reverseString = reverseString + word.charAt(i);
+        }
+        
+        if(word.equalsIgnoreCase(reverseString))
+        System.out.println("The word is palindrome");
+        else 
+        System.out.println("The word is not palindrome");
+    }
+}     
